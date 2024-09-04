@@ -5,15 +5,15 @@
 
 // Initialize the custom popup functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Find the <footer> element
-    var footer = document.querySelector('footer');
+    // Find the element with id="MainContent"
+    var mainContent = document.querySelector('#MainContent');
 
     // Create a new div element
     var popPayDiv = document.createElement('div');
     popPayDiv.id = 'popPay';
 
-    // Insert the new div after the <footer>
-    if (footer) {
-        footer.parentNode.insertBefore(popPayDiv, footer.nextSibling);
+    // Insert the new div after the #MainContent element
+    if (mainContent) {
+        mainContent.parentNode.insertBefore(popPayDiv, mainContent.nextSibling);
     }
 });
